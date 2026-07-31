@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: https://developer.nodeslinks.com/ ; https://nodeslinks.com/security-faq/
+standards:
+- id: oauth2
+  conforms: true
+  evidence: developer portal performs an OAuth token exchange (oauth/token, client_id, scope)
+- id: iso-27001
+  conforms: true
+  evidence: ISO 27001 certification stated on the security FAQ (audit via Tempo Audits)
+- id: cyber-essentials
+  conforms: true
+  evidence: UK Cyber Essentials certification stated on the security FAQ
+- id: oidc
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no public OpenAPI available to confirm application/problem+json error envelope
+- id: fhir-r4
+  conforms: false

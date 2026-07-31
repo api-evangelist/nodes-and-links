@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://developer.nodeslinks.com/
+docs: https://developer.nodeslinks.com/
+notes: >-
+  Nodes & Links exposes a production API at https://api.app.nodeslinks.com behind
+  AWS API Gateway (unauthenticated requests return HTTP 403
+  {"message":"Missing Authentication Token"}). The developer-portal single-page app
+  (developer.nodeslinks.com) drives an OAuth token exchange against an oauth/token
+  endpoint using client_id + scope, indicating an OAuth 2.0 bearer-token model for
+  programmatic access. No public OpenAPI is published (the reference is served inside
+  the authenticated portal), so security schemes could not be derived mechanically.
+summary:
+  types:
+  - oauth2
+  api_key_in: []
+  oauth2_flows:
+  - clientCredentials
+schemes:
+- name: OAuth2
+  type: oauth2
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://api.app.nodeslinks.com/oauth/token
+    evidence: developer-portal main.js references oauth/token, client_id, scope
+  sources:
+  - https://developer.nodeslinks.com/

@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://nodeslinks.com/security-faq/
+url: https://nodeslinks.com/security-faq/
+certifications:
+- ISO 27001
+- UK Cyber Essentials
+program:
+  hosting: AWS (logical tenant isolation at API and data layers)
+  data_regions:
+  - USA
+  - EU
+  - UK
+  - Australia
+  encryption_at_rest: AES-256 (databases, data stores, file systems)
+  encryption_in_transit: TLS with strong protocols and ciphers
+  key_management: AWS-managed key rotation
+  backups: daily encrypted backups replicated to a separate AWS region
+  access_control: role-based least-privilege, annual access reviews, MFA for privileged accounts
+  penetration_testing: regular independent third-party assessments across the platform
+  secure_sdlc: threat modeling, code review, OWASP-aligned secure coding, independent non-prod testing
+  audit_verification: ISO 27001 audit details available via Tempo Audits verification link
+evidence:
+- source: https://nodeslinks.com/security-faq/
+  keywords:
+  - iso 27001
+  - cyber essentials
+  - penetration testing
+  - aes-256
+  - aws

@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+source: https://nodeslinks.com/
+status_page: https://nodesandlinks.statuspage.io/
+status_page_provider: Atlassian Statuspage
+versioning:
+  scheme: unknown
+  notes: >-
+    The API is served from https://api.app.nodeslinks.com behind AWS API Gateway.
+    No public versioning or deprecation policy is published outside the
+    authenticated developer portal.
+deprecation:
+  policy_url: null
+  sunset_header: null
+sla:
+  url: null
+  notes: Enterprise SLAs are handled through commercial agreements; no public SLA page found.
+deprecated_operations: []

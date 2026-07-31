@@ -1,7 +1,28 @@
 aid: nodes-and-links
 name: Nodes and Links
-description: Nodes and Links is a company surfaced as a portfolio company of seedcamp and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Nodes & Links is an AI-powered project management and project controls platform for the
+  construction, engineering, and large capital-projects sector. It ingests and analyzes
+  project schedules to surface schedule-integrity issues, delays, change control, progress,
+  risk (including stress testing), resource, and earned-value-management insights, and lets
+  schedulers, planners, project controllers, project managers, and executives interrogate
+  their programs through natural-language queries grounded in expert project-controls logic.
+  The company runs a production API at api.app.nodeslinks.com (AWS API Gateway, OAuth
+  bearer-token access) with an authenticated developer portal, and is used by firms including
+  Balfour Beatty, VINCI, DPR Construction, Turner & Townsend, and AECOM.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://nodeslinks.com/wp-content/uploads/2025/02/HOMEPAGE.png
 url: https://raw.githubusercontent.com/api-evangelist/nodes-and-links/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +32,33 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Project Management
+- Project Controls
+- Construction
+- Scheduling
+- Artificial Intelligence
+- Risk Analysis
+- Earned Value Management
+apis:
+- name: Nodes & Links API
+  description: >-
+    Production API for the Nodes & Links project-controls platform, served from AWS API
+    Gateway with OAuth bearer-token authentication. The full API reference is served inside
+    the authenticated developer portal; no public OpenAPI is published.
+  humanURL: https://developer.nodeslinks.com/
+  baseURL: https://api.app.nodeslinks.com
+  properties:
+  - type: DeveloperPortal
+    url: https://developer.nodeslinks.com/
+  - type: Documentation
+    url: https://developer.nodeslinks.com/
+  - type: APIReference
+    url: https://developer.nodeslinks.com/
+  - type: Authentication
+    url: authentication/nodes-and-links-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -22,4 +66,39 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://nodeslinks.com
+  url: https://nodeslinks.com
+- type: DeveloperPortal
+  url: https://developer.nodeslinks.com/
+- type: Documentation
+  url: https://developer.nodeslinks.com/
+- type: SignUp
+  url: https://nodeslinks.com/demo/
+- type: Blog
+  url: https://nodeslinks.com/resources/
+- type: TermsOfService
+  url: https://nodeslinks.com/licence-terms/
+- type: PrivacyPolicy
+  url: https://nodeslinks.com/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/nodes-links
+- type: StatusPage
+  url: https://nodesandlinks.statuspage.io/
+- type: Compliance
+  url: https://nodeslinks.com/security-faq/
+- type: Authentication
+  url: authentication/nodes-and-links-authentication.yml
+- type: DomainSecurity
+  url: security/nodes-and-links-domain-security.yml
+- type: TrustCenter
+  url: security/nodes-and-links-trust-center.yml
+- type: Conformance
+  url: conformance/nodes-and-links-conformance.yml
+- type: Lifecycle
+  url: lifecycle/nodes-and-links-lifecycle.yml
+- type: LLMsTxt
+  url: llms/nodes-and-links-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

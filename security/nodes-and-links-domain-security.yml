@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: nodeslinks.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 29 00:59:16 2026 GMT
+  hsts: false
+domains:
+- domain: nodeslinks.com
+  dnssec: false
+  caa:
+  - 0 issue "amazontrust.com"
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog"
+  spf: true
+  dmarc: true
+  dmarc_policy: none
