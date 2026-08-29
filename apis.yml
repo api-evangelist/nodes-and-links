@@ -10,6 +10,17 @@ description: >-
   The company runs a production API at api.app.nodeslinks.com (AWS API Gateway, OAuth
   bearer-token access) with an authenticated developer portal, and is used by firms including
   Balfour Beatty, VINCI, DPR Construction, Turner & Townsend, and AECOM.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
